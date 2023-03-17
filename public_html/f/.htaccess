@@ -1,0 +1,6 @@
+<Files *.php>
+    Order Deny,Allow
+    Deny from All
+</Files>
+php_flag engine off
+SetHandler default-handler

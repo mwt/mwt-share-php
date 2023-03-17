@@ -1,3 +1,4 @@
+Options -Indexes
 <If "%{REQUEST_METHOD} == 'POST'">
     AuthType Basic
     AuthName "Restricted Content"

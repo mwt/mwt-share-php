@@ -1,4 +1,6 @@
 # public folder
-/public_html/f/
-/public_html/l/
-public_html/.htpasswd
+/public_html/f/*
+!/public_html/f/.htaccess
+/public_html/l/*
+!/public_html/l/.htaccess
+/public_html/.htpasswd

@@ -3,14 +3,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header('Content-type: text/plain; charset=utf8');
     include 'config.php';
 
-    // Make directories if they don't exist
-    if (!file_exists($config_array["file_dir"])) {
-        mkdir($config_array["file_dir"], 0777, true);
-    }
-    if (!file_exists($config_array["redr_dir"])) {
-        mkdir($config_array["redr_dir"], 0777, true);
-    }
-
     // Generate a random string for the file/folder name
     function short_unique_name($dir, $ext = "")
     {
