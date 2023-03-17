@@ -18,11 +18,3 @@
 <IfModule mod_headers.c>
     Header set Cache-Control "public"
 </IfModule>
-# send main page to static file
-<IfModule LiteSpeed>
-    RewriteEngine on
-    CacheLookup on
-    RewriteBase /
-    RewriteCond %{REQUEST_METHOD} =GET
-    RewriteRule ^$ /index.html [L]
-</IfModule>
