@@ -2,7 +2,7 @@ Options -Indexes
 <If "%{REQUEST_METHOD} == 'POST'">
     AuthType Basic
     AuthName "Restricted Content"
-    AuthUserFile /home/mwtsh/public_html/.htpasswd
+    AuthUserFile .htpasswd
     Require valid-user
 </If>
 # cache rules
