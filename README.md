@@ -8,9 +8,11 @@ This is a barebones PHP reimplementation of [the nullpointer](https://0x0.st/) f
 
 This project will only work on a web server that supports `.htaccess` files such as Apache or Litespeed. This project is not compatible with Nginx, caddy, or any server where `.htaccess` support is not enabled.
 
-Copy the files in the `public_html` directory to the root directory of your web server. To setup your credentials, create an `.htpasswd` file with the username and password you want to use. The `.htpasswd` file can be created by running `htpasswd -c .htpasswd YOUR_USERNAME HERE` in the root directory. To add more users, you can run the same command without the `-c` flag. The `.htpasswd` file should be located in the same directory as the `.htaccess` file.
+To install this project:
 
-If you want to install this outside of the root directory, you will need to update the `.htaccess` file to point to the absolute path of the `.htpasswd` file.
+1. Clone this repository to your web server.
+2. Run `./install.sh` to configure password authentication. You may rerun this script to change the password(s) or add additional users.
+3. Symlink your document root to the `public_html` directory or move the contents of `public_html` to your document root.
 
 ## Removing Files
 
