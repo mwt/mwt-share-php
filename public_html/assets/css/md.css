@@ -183,6 +183,7 @@ table>thead>tr>th {
 
 h1,
 hr,
+footer,
 table>tbody>tr+tr>td {
     border-color: rgba(255, 255, 255, 0.18);
 }
@@ -193,6 +194,13 @@ table>tbody>tr+tr>td {
 
 .code-line .code-line:hover:before {
     border-left: none;
+}
+
+footer {
+    margin-top: 3em;
+    border-top-width: 2px;
+    border-top-style: solid;
+    text-align: center;
 }
 
 
