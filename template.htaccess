@@ -5,6 +5,12 @@ Options -Indexes
     AuthUserFile .htpasswd
     Require valid-user
 </If>
+# redirect to https
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule ^$ https://%{HTTP_HOST} [R,L]
+</IfModule>
 # cache rules
 <IfModule mod_expires.c>
     # Turn on the module.
